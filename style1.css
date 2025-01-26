@@ -1,0 +1,64 @@
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      animation: blur 0.8s linear 1;
+    }
+
+    .bgimg {
+      background-image: url(nathan-anderson-iYO-EGosrCo-unsplash.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+      background-color: #000;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .topright {
+      position: absolute;
+      bottom: 0px;
+      right: 10px;
+    }
+
+    .bottomleft {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+    }
+
+    .middle {
+      position: absolute;
+      box-sizing: border-box;
+      border: 2px solid white ;
+      top: 50%;
+      left: 50%;
+      padding: 50px;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px #00000080;
+      transition: border-radius 0.3s, border 0.3s, background 0.3s;
+      animation: revolve 1s linear infinite reverse;
+    }
+
+    @keyframes blur{
+      from{filter: blur(10px);}
+      to{filter: blur(0px);}
+    }
+    @keyframes revolve{
+      0%   {border-color: red;}
+      25%  {border-color: blue;}
+      50%  {border-color: yellow;}
+      75%  {border-color: green;}
+      100% {border-color: white;}
+}
+    hr {
+      margin: auto;
+      width: 40%;
+      border: 1px solid white;
+    }
